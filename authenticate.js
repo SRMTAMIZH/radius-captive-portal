@@ -1,8 +1,9 @@
 const radius = require('radius');
 const dgram = require('dgram');
 
-const RADIUS_SERVER = 103.255.234.130; // Your RADIUS server IP
-const RADIUS_SECRET = jazenetworks; // Your RADIUS shared secret
+// Define the RADIUS server address and shared secret
+const RADIUS_SERVER = '103.255.234.130'; // Your RADIUS server IP
+const RADIUS_SECRET = 'jazenetworks'; // Your RADIUS shared secret
 
 export default function handler(req, res) {
     if (req.method !== 'POST') {
