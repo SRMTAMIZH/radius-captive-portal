@@ -1,7 +1,7 @@
 {
   "name": "radius-captive-portal",
   "version": "1.0.0",
-  "main": "authenticate.js",
+  "main": "api/authenticate.js",
   "scripts": {
     "start": "node server.js"
   },
