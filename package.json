@@ -1,0 +1,12 @@
+{
+  "name": "radius-captive-portal",
+  "version": "1.0.0",
+  "main": "authenticate.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "radius": "^1.x.x",
+    "dgram": "^1.x.x"
+  }
+}
