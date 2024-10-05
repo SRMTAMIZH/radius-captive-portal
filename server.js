@@ -6,7 +6,7 @@ const dgram = require('dgram');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const RADIUS_SERVER = '192.168.15.254'; // Replace with your RADIUS server IP
+const RADIUS_SERVER = '103.255.234.130'; // Replace with your RADIUS server IP
 const RADIUS_SECRET = 'jazenetworks'; // Replace with your RADIUS shared secret
 
 app.use(bodyParser.urlencoded({ extended: true }));
