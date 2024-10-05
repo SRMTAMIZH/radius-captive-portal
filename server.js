@@ -1,8 +1,8 @@
-// server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const radius = require('radius');
 const dgram = require('dgram');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,7 +10,7 @@ const RADIUS_SERVER = '103.255.234.130'; // Replace with your RADIUS server IP
 const RADIUS_SECRET = 'jazenetworks'; // Replace with your RADIUS shared secret
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public')); // Serve your HTML files from a 'public' directory
+app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
 
 app.post('/authenticate', (req, res) => {
     const username = req.body.username;
@@ -57,4 +57,3 @@ app.post('/authenticate', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
