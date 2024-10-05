@@ -3,7 +3,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/api/authenticate.js"
+            "dest": "/authenticate.js"
         }
     ]
 }
